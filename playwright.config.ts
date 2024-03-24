@@ -24,7 +24,7 @@ export default defineConfig({
     projects: [
         {
             name: "chromium",
-            use: { ...devices["Desktop Chrome"], headless: false, channel: "chrome" }, // Executing in the Chrome channel
+            use: { ...devices["Desktop Chrome"], headless: false, channel: "chrome", testIdAttribute: "data-test-id" }, // Executing in the Chrome channel
         },
     ],
 });
