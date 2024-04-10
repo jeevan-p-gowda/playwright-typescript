@@ -1,10 +1,14 @@
 import { defineConfig, devices } from '@playwright/test';
+import dotenv from "dotenv";
 
 /**
  * Read environment variables from file.
  * https://github.com/motdotla/dotenv
  */
 // require('dotenv').config();
+dotenv.config({
+    path: `${process.cwd()}/env/${process.env.ENV}.env`,
+});
 
 /**
  * See https://playwright.dev/docs/test-configuration.
@@ -15,7 +19,7 @@ export default defineConfig({
     workers: 1,
     reporter: [
         [
-            "html",
+            "html", //https://playwright.dev/docs/test-reporters
             {
                 open: "never",
             },
@@ -45,6 +49,30 @@ export default defineConfig({
                 headless: false
             },
             testMatch: ["**/*.me.spec.ts"]
-        }
+        },
+        {
+            name: "parallel",
+            use: {
+                ...devices["Desktop Chrome"],
+                channel: "chrome",
+            },
+            fullyParallel: true,
+            testDir: './tests/parallel',
+            testMatch: "test.suite*.spec.ts",
+        },
+        // {
+        //     name: "firefox",
+        //     use: { ...devices["Desktop Firefox"],
+        //         headless: false
+        //      },
+        // },
+        // {
+        //     name: "safari",
+        //     use: { ...devices["Desktop Safari"] },
+        // },
     ],
+    use: {
+        baseURL: process.env.BASE_URL,
+        // Other use property fields...
+    },
 });
