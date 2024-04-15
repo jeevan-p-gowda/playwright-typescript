@@ -1,0 +1,10 @@
+{
+    "firstName": "James",
+    "lastName": "Kenny",
+    "password": "1234567890",
+    "productName": "Shoes",
+    "address1": "This is the delivery address",
+    "city": "Bangalore",
+    "zone": "KA",
+    "pincode": "560036"
+}

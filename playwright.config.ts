@@ -72,7 +72,8 @@ export default defineConfig({
         // },
     ],
     use: {
-        baseURL: process.env.BASE_URL,
+        // baseURL: process.env.BASE_URL,
+        baseURL : "https://web-playground.ultralesson.com/"
         // Other use property fields...
     },
 });
