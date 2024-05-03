@@ -60,12 +60,12 @@ export default defineConfig({
             testDir: './tests/parallel',
             testMatch: "test.suite*.spec.ts",
         },
-        // {
-        //     name: "firefox",
-        //     use: { ...devices["Desktop Firefox"],
-        //         headless: false
-        //      },
-        // },
+        {
+            name: "firefox",
+            use: { ...devices["Desktop Firefox"],
+                headless: false
+             },
+        },
         // {
         //     name: "safari",
         //     use: { ...devices["Desktop Safari"] },
