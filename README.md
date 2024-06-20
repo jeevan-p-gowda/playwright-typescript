@@ -14,5 +14,7 @@ It is built with Playwright in TypeScript, seamlessly handles testing E2E scenar
 `npx playwright test <path to test file>`
 > If using Windows, execute on Git Bash.
 
+[Commands](https://github.com/jeevan-p-gowda/playwright-typescript-ui-framework/blob/main/commands.md)
+
 ### 🍒Refer
 https://github.com/akshayp7/playwright-typescript-playwright-test
