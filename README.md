@@ -2,6 +2,9 @@
 
 Educate on playwright with typescript capabilities.
 
+### 🏗️Pre-requisite
+JavaScript foundation and beyond
+
 ### 🛠️Setup
 1. Install [Git Bash](https://git-scm.com/downloads) - for Windows
 2. Install [NodeJS](https://nodejs.org/en) - based on your platform
