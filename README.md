@@ -15,7 +15,7 @@ TypeScript foundations and beyond
 
 ### ⏯️Execution
 `npx playwright test <path to test file>`
-> If using Windows, execute on Git Bash.
+  > If using Windows, set IDE terminal to Git Bash and execute.
 
 [Commands](https://github.com/jeevan-p-gowda/playwright-typescript-ui-framework/blob/main/commands.md)
 
