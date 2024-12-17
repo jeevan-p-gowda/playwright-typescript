@@ -3,7 +3,7 @@
 Educate on playwright with typescript capabilities.
 
 ### 🏗️Pre-requisite
-JavaScript foundations and beyond
+TypeScript foundations and beyond
 
 ### 🛠️Setup
 1. Install [Git Bash](https://git-scm.com/downloads) - for Windows
